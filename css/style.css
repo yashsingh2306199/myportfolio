@@ -22,7 +22,13 @@ h5,
 h6 {
   font-family: "Raleway", sans-serif;
 }
-
+.emg{
+  position: absolute!important;
+  right: 100px!important;
+  background: #ffffff!important;
+  border-radius: 12px!important;
+  box-shadow: 6px 5px 2px 2px #ede9e9!important;
+}
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
