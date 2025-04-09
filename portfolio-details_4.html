@@ -21,6 +21,32 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -30,6 +56,13 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+         <h1>IDMS – Intelligent Data Management System UX Case Study</h1><br>
+
+  <div class="section">
+    <h2>📄 Project Overview</h2>
+    <p>IDMS is a platform designed to empower administrators with complete control over user access across physical touchpoints like gates, kiosks, restricted areas, and counters. The system focuses on creating a secure, centralized, and user-friendly dashboard experience for efficient monitoring and configuration.</p>
+  </div>
+
 
         <div class="row gy-4">
 
@@ -50,69 +83,142 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: Aramco</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About Projects</h2>
-              <p>
-               Title: IDMS</p>
-<img src="img/portfolio/Picture 1.png" alt="UX workflow" style="width: 50%"/>
-<p><b>Problem Statement:</b></p>
-
-<p>In this use case study, I have to work on touchpoint configuration solution in which we have to build platform where admin can control or manage user access on various touchpoint(gates,restriced access zone) The goal of IDMS project ux design is to apply enhanced user experience and create a better overall Admin console for the staff experience.</p>
-<p><b>Requirements:</b></p>
-
-<p>
-In order to design a IDMS ux design, we need to understand the requirements of the staff/admin like what are the feature they planned or want as a tool to enhance their productivity in minimal efforts and with more security. This includes understanding what needs to be improved/implemented w.r.t to implement or integrate various APIs that need to be intgrated at the platform that have unique feature or operation to perform
-
-We have requirements like
-<ol>
-<li>Need to integrate APIs that were reponsibke for managing the database of the users access to the various touchpoint</li>
-<li>Need to show data of various kiosk,ticket counter,security gates,boarding gates, unmapped sensors</li>
-<li>Need to show user data with all information in grid view in order to understand his/her access rights to various points and under on which company they belong</li>
-<li>Show various live tracking data of the APIs responses and present into suitable datatables for the filteration of the data on the basis of various filter like touchpoint, date, name etc.</li>
-</ol>
-<p><b>User research:</b></p>  
-<p>
-User research is essential for understanding the needs of staff/Admins. This involves interviewing various staff and observing how they interact with the system ,under which age group they falls ,how much technical sounds they were, what are the problems they usually face, how they tackle the same during peak time. We want to know what are the things they need to track on regular basis and which information is crucial.
-
-The methods we used were:
-<ol>
-<li>Competitive Analysis</li>
-<li>Surveys</li>
-<li>User Interviews</li>
-<li>Persona Development</li>
-</ol>
-</p>
-<p>
-For interview i interview future admins/reponsible person of the application and gather data like How many APIs we have, how many sensor are there, how they want data to be maintained. how they want data to be represented, filtered, what are the data that need to do analytics to show the same in more creative and unique way for better user experience.</p>
-<p><b>
-Ideation & testing</b>
-</p>
-<p>
-I sketched ideas of how the Dashboard,live tracking ,gate information feature for Aviation project should look. Then created low fidelity wireframes and finally, high fidelity wireframes that incorporated the look and feel of Aviation project.I went through three rounds of testing; at each step of the design process i created a clickable prototype to test our ideas, obtained feedback from potential customers and iterated our design.
-</p>
-  <p>
-  <b>User Interface Design</b>
-  </p>
-  <p>
-  Once i have a good understanding of the user needs, it's time to design the user interface. I need to create a user interface that is easy to use,provides a good user experience, have accessiblity,usablity,consitency in information flow, color theory should be aligned to company standard. I also need to make user interface for admins/staff who gonna track the data or use the data and maintained the live data as well as analysis the same.
-
-As a individual contributor form Noida designing team for the web development i worked on deisgning the wireframe from low fidelity to high fidelity from doing requirement gathering to user research and analysis the data. Following proces in agile and in iterative way i used to do designing in iteration wise and take the feedback from the stakeholder(airport staff) and the product owner of the application. </p>
-  <b>Tools used</b>
-  <p>
-  Invision App
-  </p>
-            </div>
-          </div>
-
         </div>
+        <div class="section">
+    <h2>Problem Statement</h2>
+    <p>Manual tracking of user access across various airport points (gates, kiosks, boarding areas) was inefficient and risk-prone. Admins lacked a unified view of user access data, making it difficult to audit, configure, and act on real-time security changes. The goal was to design a digital console that streamlined this management with data-rich dashboards and filtering capabilities.</p>
+  </div>
+
+  <div class="section">
+    <h2>Requirements</h2>
+    <ul>
+      <li>Integrate APIs to manage and fetch live access data.</li>
+      <li>Display user access levels in a searchable, filterable data grid.</li>
+      <li>View and monitor real-time touchpoint activity (kiosks, gates, sensors).</li>
+      <li>Enable filtering by touchpoint, time, user role, or access zone.</li>
+      <li>Represent API activity visually for diagnostics.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Research</h2>
+    <p>We interviewed future users (admins and security personnel) to capture their routine interactions, issues faced during peak operations, and technical familiarity. Insights included:</p>
+    <ul>
+      <li>Need for minimal-click navigation and real-time grid updates.</li>
+      <li>Desire for customizable alerts and visual diagnostics of API failures.</li>
+      <li>Importance of seeing company-user relationships at a glance.</li>
+    </ul>
+    <p>Research methods:</p>
+    <ul>
+      <li>Interviews with airport IT staff</li>
+      <li>Competitive Analysis of similar platforms</li>
+      <li>Surveys of potential admin users</li>
+      <li>Persona creation & journey mapping</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Persona</h2>
+    <p><strong>Name:</strong> Sandeep Arora<br>
+       <strong>Role:</strong> Airport Admin – Security & Access<br>
+       <strong>Goals:</strong> Easily configure user access to zones, receive updates on access anomalies.<br>
+       <strong>Pain Points:</strong> Navigating fragmented dashboards, lack of live feedback on API failures, poor filtering options.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Information Architecture</h2>
+    <p>We organized the interface into high-utility categories:</p>
+    <ul>
+      <li><strong>Dashboard:</strong> High-level view of users and touchpoints</li>
+      <li><strong>User Management:</strong> Grid view, filtering, access roles</li>
+      <li><strong>Touchpoint Config:</strong> APIs mapping, terminal/sensor monitoring</li>
+      <li><strong>Live Data:</strong> Streaming access attempts, logs</li>
+      <li><strong>Diagnostics:</strong> API errors, response times, retry stats</li>
+    </ul>
+    <ul>
+      <li><strong>1. Dashboard</strong>
+        <ul>
+          <li>System status & overview</li>
+          <li>API activity alerts</li>
+        </ul>
+      </li>
+
+      <li><strong>2. User Management</strong>
+        <ul>
+          <li>Filterable user grid with access roles</li>
+          <li>Search by company, zone, or name</li>
+        </ul>
+      </li>
+
+      <li><strong>3. Touchpoint Configuration</strong>
+        <ul>
+          <li>Manage kiosks, sensors, gates</li>
+          <li>Map access levels to zones</li>
+        </ul>
+      </li>
+
+      <li><strong>4. Live Data Tracking</strong>
+        <ul>
+          <li>Real-time access logs</li>
+          <li>Sensor activity visualized</li>
+        </ul>
+      </li>
+
+      <li><strong>5. Diagnostics</strong>
+        <ul>
+          <li>API health status</li>
+          <li>Error logs and response latency</li>
+        </ul>
+      </li>
+
+      <li><strong>6. Reporting</strong>
+        <ul>
+          <li>Export logs & performance charts</li>
+          <li>Filter by user, zone, date</li>
+        </ul>
+      </li>
+
+      <li><strong>7. Settings</strong>
+        <ul>
+          <li>User roles & permissions</li>
+          <li>Alert configuration, timezone, etc.</li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Wireframes & UX Testing</h2>
+    <p>Initial sketches were refined into low-fidelity and then mid-fidelity wireframes, which were shared in three rounds of feedback loops with IT staff. We tested:</p>
+    <ul>
+      <li>Access grid filters and usability</li>
+      <li>Touchpoint visibility and zone grouping</li>
+      <li>Diagnostic alert readability</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Final UI Design</h2>
+    <p>The final UI focused on clarity, actionability, and performance. Key highlights:</p>
+    <ul>
+      <li>Color-coded touchpoint statuses</li>
+      <li>Quick filter panel with saved filters</li>
+      <li>Live API performance charts and logs</li>
+    </ul>
+    <img src="images/idms_ui_final.png" alt="Final UI Design">
+  </div>
+
+  <div class="section">
+    <h2>Analytics & Reporting</h2>
+    <p>Dashboards offer exportable reports showing usage trends, access anomalies, and API performance snapshots.</p>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>By understanding administrative pain points and designing with real-time needs in mind, we delivered an intuitive and scalable console that streamlines touchpoint security operations across a complex airport ecosystem.</p>
+  </div>
+
 
       </div>
     </section><!-- End Portfolio Details Section -->
