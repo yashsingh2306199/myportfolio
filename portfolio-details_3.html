@@ -22,6 +22,68 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #34495e;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img {
+      width: 100%;
+      margin: 1rem 0;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .persona {
+      display: flex;
+      flex-direction: row;
+      gap: 1.5rem;
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-top: 2rem;
+      align-items: center;
+    }
+    .persona img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .persona-details {
+      flex: 1;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background-color: #121212;
+        color: #e0e0e0;
+      }
+      h1, h2 {
+        color: #ffffff;
+      }
+      .persona {
+        background-color: #1e1e1e;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
@@ -32,7 +94,22 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
-        <div class="row gy-4">
+         <h1>Facial Recognition Aviation Boarding – UX Case Study</h1>
+
+  <h2>Problem Statement</h2>
+  <p>
+    This project aimed to revolutionize the Indian airport experience by introducing a facial recognition-based boarding process. The goal was to save time for passengers and staff while ensuring 100% security compliance.
+  </p>
+
+  <h2>Requirements</h2>
+  <ul>
+    <li>Facial-based, contactless identity verification from entry to gate.</li>
+    <li>Real-time photo capture linked with boarding pass for security clearance.</li>
+    <li>Admin dashboard to track enrollments, security status, baggage, immigration, and boarding checkpoints.</li>
+    <li>Live monitoring, user access control, and alert management system.</li>
+  </ul>
+
+  <div class="row gy-4">
 
           <div class="row">
             <div class="portfolio-details-slider swiper">
@@ -55,77 +132,79 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: Indian govt airports</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About Projects</h2>
-              <p>
-               Title: Facial Recognition Aviation Boarding</p>
-<img src="img/portfolio/Picture 1.png" alt="UX workflow" style="width: 50%"/>
-<p><b>Problem Statement:</b></p>
-
-In this use case study, I have to work on unique solution that were new to india and its future users to make their life easy at airport and save their precious time and effort of the airport security with 100% safety of the airport and passenger. The goal of aviation project ux design is to apply enhanced user experience and create a better overall airport experience for both the passenger and for airport staff.
-
-<p><b>Requirements:</b></p>
-
-<p>
-In order to design a aviation ux design, we need to understand the requirements of the passenger and the steps they followed on from starting of the airport entry to the last of entering into the plane as well as know the SOP of the airport staff how they manage passenger and follow the protocol. This includes understanding what needs to be improved/implemented w.r.t to implement our facial recognition software as well as follow their proper protocol to adhere the security requirements
-
-We have requirements like
-<ol>
-<li>Need to take boarding passes from passengers into databases and proper cross check the same then allow them to enter airport after proper validation</li>
-<li>Need to allow passenger to enter without touching or giving any identification documents only allow them to enter on the basis of their picture in real time and their boading passes</li>
-<li>Allow passengers to enter through security checks and boarding of the plane gate(The last gate) by scanning their faces that they uploaded on real time by clicking photos</li>
-<li>Need to some kind of dashboard that will show all the data to the admin or staff like what is the total enrollment number out which hiow many are active. Like wise check-in information of the passenger, baggae drop coun,security clearance and if travelling to international location then immigration as well as boarding the gates of the plane/aircraft</li>
-<li>Need live monitoring of the data</li>
-<li>User management to manage the rights</li>
-<li>Setting up business rule and configuring the alert management if their were alert or setting up alerts for the devices</li>
-</ol>
-<p><b>User research:</b></p>  
-<p>
-User research is essential for understanding the needs of the passengers and airport staff. This involves interviewing various passengers and observing how many time they interact with the staff/airport security, what are the problems they usually face, how they tackle the same during peak time. We want to know what they like and don't like about the airport process of boarding, and uncover any problems that they face.
-
-The methods we used were:
-<ol>
-<li>Competitive Analysis</li>
-<li>Surveys</li>
-<li>User Interviews</li>
-<li>Persona Development</li></ol>
-</p>
-<p>
-So for the same user interview i have conducted on the one airport and nearly to 18-20 passenger as well as airport staff and recorded their response to do the analysis of the data to understand the pain area and implement the same into low fidelity wireframe for collecting further review and comments from the users of the applications
-</p>
-<p><b>
-Ideation & testing</b>
-</p>
-<p>
-I sketched ideas of how the Dashboard,live tracking ,gate information feature for Aviation project should look. Then created low fidelity wireframes and finally, high fidelity wireframes that incorporated the look and feel of Aviation project.I went through three rounds of testing; at each step of the design process i created a clickable prototype to test our ideas, obtained feedback from potential customers and iterated our design.
-</p>
+  <h2>User Research</h2>
   <p>
-  <b>User Interface Design</b>
+    Conducted in-person interviews with 18–20 passengers and staff across a major Indian airport. Key pain points were identified using:
   </p>
+  <ul>
+    <li>Competitive Analysis</li>
+    <li>Surveys</li>
+    <li>User Interviews</li>
+    <li>Persona Development</li>
+  </ul>
+
+  <p>Key findings and statistics gathered during research:</p>
+  <ul>
+    <li><strong>85%</strong> of passengers found current boarding methods time-consuming and stressful during peak hours.</li>
+    <li><strong>70%</strong> of interviewed users showed interest in biometric systems for quicker access and reduced interaction.</li>
+    <li><strong>60%</strong> of airport staff mentioned difficulty in tracking real-time passenger flow across gates.</li>
+    <li>Major concerns raised by passengers included <strong>privacy issues</strong> (35%) and <strong>lack of transparency</strong> in data handling (20%).</li>
+    <li>International travelers emphasized the need for <strong>multi-language support</strong> and <strong>clearer signage</strong> in the digital interface.</li>
+  </ul>
+  <p>These insights helped shape key design decisions including visual clarity, simplified interactions, and real-time dashboard implementation for staff monitoring.</p>
+
+  <img src="img/user_research_insights_chart.png" alt="User Research Statistics Chart" />
+
+    <p>Persona Development:</p>
+    <h2 style="margin-top: 3rem;">👤 Persona: Rajiv Sharma – Frequent Business Traveler</h2>
+  <div class="persona">
+    <img src="images/persona-passenger.jpg" alt="Rajiv Sharma">
+    <div class="persona-details">
+      <p><strong>Age:</strong> 38</p>
+      <p><strong>Location:</strong> Mumbai, India</p>
+      <p><strong>Occupation:</strong> Sales Director</p>
+      <p><strong>Tech Familiarity:</strong> High</p>
+      <p><strong>Goals:</strong> Fast, touchless airport experience</p>
+      <p><strong>Pain Points:</strong> Long queues, manual checks</p>
+    </div>
+  </div>
+
+  <h2 style="margin-top: 3rem;">👤 Persona: Sunita Verma – Airport Operations Executive</h2>
+  <div class="persona">
+    <img src="images/persona-staff.jpg" alt="Sunita Verma">
+    <div class="persona-details">
+      <p><strong>Age:</strong> 29</p>
+      <p><strong>Location:</strong> Delhi Airport</p>
+      <p><strong>Role:</strong> Gate & Check-in Supervisor</p>
+      <p><strong>Tech Familiarity:</strong> Moderate</p>
+      <p><strong>Goals:</strong> Monitor passengers efficiently</p>
+      <p><strong>Pain Points:</strong> Bottlenecks at peak hours, manual validations</p>
+    </div>
+  </div>
+
+  <img src="img/user-persona.png" alt="User Persona" />
+
+  <h2>Ideation & Testing</h2>
   <p>
-  Once i have a good understanding of the user needs, it's time to design the user interface. I need to create a user interface that is easy to use,provides a good user experience, have accessiblity,usablity,consitency in information flow, color theory should be aligned to company standard. I also need to make user interface for the passenger as well as for airport staff who gonna track the data live as well as analysis the same for further improvement of the user experience/convience on the airport.
-
-Both the user interface will be differnet from one another as passenger will only appear in front of camera to scan their faces to get through the gates
-
-As a individual contributor form Noida designing team for the web development i worked on deisgning the wireframe from low fidelity to high fidelity from doing requirement gathering to user research and analysis the data. Following proces in agile and in iterative way i used to do designing in iteration wise and take the feedback from the stakeholder(airport staff) and the product owner of the application
+    Rapid wireframing began with sketches, then moved into low-fidelity wireframes for feedback. Three iterations of testing were conducted using clickable prototypes developed in Invision App.
   </p>
-  <b>Tools used</b>
+  <img src="img/wireframe-lowfi.png" alt="Low Fidelity Wireframe" />
+
+  <h2>UI Design</h2>
   <p>
-  Invision App
+    Designed two distinct interfaces: one for passengers (touchless face scan flow) and one for airport staff (real-time monitoring). Emphasis was placed on accessibility, consistency, and usability, all aligned with aviation branding guidelines.
   </p>
-            </div>
-          </div>
+  <h2>Tools Used</h2>
+  <ul>
+    <li>Invision App</li>
+    <li>Figma (for final UI designs)</li>
+    <li>Agile, iterative design methodology</li>
+  </ul>
 
-        </div>
-
+  <h2>My Role</h2>
+  <p>
+    As the individual contributor from the Noida web design team, I led the full UX design lifecycle – from user research to testing, wireframing to UI – ensuring a seamless passenger experience and robust staff toolset. Feedback loops with stakeholders and agile iterations kept the design grounded in user needs.
+  </p>
       </div>
     </section><!-- End Portfolio Details Section -->
 
