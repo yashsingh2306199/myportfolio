@@ -22,6 +22,32 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+   <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      margin: 1rem 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    .section {
+      margin-bottom: 2.5rem;
+    }
+  </style>
 </head>
 
 <body>
@@ -31,8 +57,70 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
+        <h1>Optimizing Truck Traffic Management on Terminal Level</h1>
 
-        <div class="row gy-4">
+  <div class="section">
+    <h2>📄 Project Overview</h2>
+    <p>This project aimed to create a centralized platform for managing truck traffic between terminals, removing manual bottlenecks and streamlining scheduling for a major transportation company.</p>
+  </div>
+
+           <div class="section">
+    <h2>Problem Statement</h2>
+    <p>Manual planning of truck traffic between terminals caused frequent delays, communication breakdowns, and inefficient resource allocation. An automated, user-friendly platform was needed to optimize logistics operations and provide real-time planning capabilities.</p>
+  </div>
+
+  <div class="section">
+    <h2>Requirements</h2>
+    <ul>
+      <li>Focus on traffic between terminals only.</li>
+      <li>Select and configure multiple terminals in a plan.</li>
+      <li>Input travel distances and estimated times.</li>
+      <li>Perform all actions in a single view (no modals/popups).</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Research</h2>
+    <p>We interviewed logistics planners and terminal managers to understand how manual coordination impacted timelines. Pain points included:</p>
+    <ul>
+      <li>High dependency on spreadsheets and verbal updates.</li>
+      <li>Frequent miscommunication between terminals.</li>
+      <li>No real-time tracking or centralized dashboard.</li>
+    </ul>
+    <p>Key user expectations:</p>
+    <ul>
+      <li>Clear, visual terminal selection.</li>
+      <li>Real-time status updates on vehicle movement.</li>
+      <li>Minimal learning curve.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Persona</h2>
+    <p><strong>Name:</strong> Ravi Sharma<br>
+       <strong>Role:</strong> Terminal Logistics Coordinator<br>
+       <strong>Goals:</strong> Streamline truck scheduling between terminals without paperwork or phone calls.<br>
+       <strong>Pain Points:</strong> Delay in updates, lack of unified view, inefficient manual tracking.
+    </p>
+  </div>
+          <img src="images/truck_persona.png" alt="User Persona">
+
+  <div class="section">
+    <h2>Information Architecture</h2>
+    <p>The platform’s architecture was designed to ensure:</p>
+    <ul>
+      <li>All components accessible from a single dashboard.</li>
+      <li>Quick toggling of terminals and linehauls.</li>
+      <li>Customizable input for distances and ETA/ATA data.</li>
+    </ul>
+  </div>
+           <img src="images/IADB.png" alt="IA Diagram">
+
+  <div class="section">
+    <h2>Wireframes & UX Design</h2>
+    <p>We used low- and mid-fidelity wireframes to test layout clarity, interaction flow, and ease of use. Below are sample wireframes used during stakeholder testing:</p>
+    <br>
+     <div class="row gy-4">
 
           <div class="row">
             <div class="portfolio-details-slider swiper">
@@ -78,61 +166,31 @@
               <div class="swiper-pagination"></div>
             </div>
           </div>
+        </div>
+  </div>
 
-          <div class="row">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: Euro Trucking</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About Projects</h2>
-              <p>
-               Title: Optimizing Truck Traffic Management on Terminal Level</p>
-               <img src="img/portfolio/Picture 1.png" alt="UX workflow" style="width: 50%"/>
+  <div class="section">
+    <h2>UI Design</h2>
+    <p>We implemented a clean interface prioritizing operational speed and data visibility. Key design decisions included:</p>
+    <ul>
+      <li>Card-based layout for each terminal’s traffic summary.</li>
+      <li>Real-time updates for ETA/ATA fields.</li>
+      <li>Status indicators for delayed linehauls.</li>
+    </ul>
+    <img src="images/truck_ui_final.png" alt="Final UI Design">
+  </div>
 
-<p><b>Problem Statement:</b></p>
+  <div class="section">
+    <h2>Reporting & Insights</h2>
+    <p>Custom reports were generated on traffic patterns, delays, and terminal efficiency. These reports helped logistics managers plan more accurately and reduce time lost to delays.</p>
+  </div>
 
-A transportation company is facing challenges in managing the truck traffic between different terminals. The current system involves manual planning and coordination, which leads to inefficiencies and delays in the delivery of goods. The company wants to develop a new software system that automates the process of truck traffic management on the terminal level.
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>The platform improved on-ground logistics by digitizing truck traffic planning. With a central dashboard, configurable terminal flows, and real-time tracking, the system reduced miscommunication and improved delivery timelines across the network.</p>
+  </div>
 
-<p><b>Requirements:</b><p>
 
-<p>Requirement 1: The truck traffic is executed on terminal level (e.g. Terminal A-Terminal B), please disregard pickup and distribution of load from the customer.
-
-The transportation company wants the new software system to focus only on the truck traffic management between different terminals. The pickup and distribution of the load from the customer will be handled separately and will not be part of the scope of this project.
-</p>
-<p>Requirement 2: The user is entitled to select multiple terminals participating in the plan.
-
-The software system should allow the user to select multiple terminals that will participate in the plan. This will enable the user to optimize the truck traffic between different terminals, which will improve the efficiency of the transportation company.
-</p>
-<p>Requirement 3: The user is entitled to provide information about every linehaul’s distance and the time required to cover that distance.
-
-The user should be able to provide information about the distance between the different terminals and the time required to cover that distance. This information will be used by the software system to optimize the truck traffic between the terminals.
-</p><p>
-Requirement 4: It is preferred that all actions are performed in a single view without the necessity of using modal/pop-up windows.
-
-The software system should have a single view where the user can perform all the actions required for truck traffic management between different terminals. The use of modal/pop-up windows should be minimized to improve the user experience and simplify the process.
-</p>
-<span><b>Solution:</b></span>
-
-<p>To address the transportation company's challenges, our team developed a web-based software system that automates the process of truck traffic management on the terminal level. The software system includes the following features:
-
-<p>Dashboard: The dashboard provides a single view of all the terminals participating in the plan. The user can select multiple terminals and view the current status of the truck traffic between them.</p>
-
-<p>Terminal Management: The user can add, edit, or delete terminals from the system. The distance between the terminals can also be specified, which will be used by the software system to optimize the truck traffic between them.</p>
-
-<p>Truck Traffic Management: The user can create a new truck traffic plan between the selected terminals. The software system will optimize the plan based on the distance and time required to cover that distance. The user can also view the current status of the truck traffic plan, which includes the estimated time of arrival and the actual time of arrival.</p>
-
-<p>Reporting: The software system generates reports on the truck traffic plan, which includes the estimated time of arrival, actual time of arrival, and any delays encountered during the transportation.</p>
-</p>
-<p><b>Conclusion:</b></p>
-
-<p>The web-based software system developed by our team has helped the transportation company to automate the process of truck traffic management on the terminal level. The software system has improved the efficiency of the transportation company by optimizing the truck traffic between different terminals. The user can select multiple terminals, provide information about the distance and time required to cover that distance, and create a truck traffic plan. The use of modal/pop-up windows has been minimized, which has improved the user experience. The software system also generates reports on the truck traffic plan, which enables the transportation company to identify any delays encountered during the transportation.
- </p>             
-            </div>
-          </div>
 
         </div>
 
