@@ -21,6 +21,37 @@
 
   <!-- Template Main CSS File -->
   <link href="css/style.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      background-color: #f9f9f9;
+      color: #1a1a1a;
+      line-height: 1.6;
+    }
+    h1, h2, h3 {
+      color: #2c3e50;
+    }
+    .section {
+      background: #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+    ul {
+      margin-left: 1.2rem;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      margin: 1rem 0;
+    }
+  </style>
+
 </head>
 
 <body>
@@ -30,7 +61,12 @@
     <!-- ======= Portfolio Details Section ======= -->
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
-
+        <div class="section">
+    <h2> Project Overview</h2><br>
+    <p>
+      The COST tool was designed to replace Turbonomics, offering a customizable, cost-effective in-house solution to help enterprises track, analyze, and optimize Azure cloud resource consumption. Using Microsoft Azure APIs, it provides machine-level analytics, savings recommendations, and decision support.
+    </p>
+  </div><br>
         <div class="row gy-4">
 
           <div class="row">
@@ -50,72 +86,94 @@
             </div>
           </div>
 
-          <div class="row">
-            <div class="portfolio-info">
-              <h3>Project information</h3>
-              <ul>
-                <li><strong>Category</strong>: Web design</li>
-                <li><strong>Client</strong>: US Hospital Management</li>
-              </ul>
-            </div>
-            <div class="portfolio-description">
-              <h2>About Projects</h2>
-              <p>
-               Title: COST (Cloud Optimisation Tool)</p>
-<img src="img/portfolio/Picture 1.png" alt="UX workflow" style="width: 50%"/>
-<p><b>Problem Statement:</b></p>
-
-In this use case study, I have to work on Cost Management Tool in which we have to create/replace a tool that help to track and cut down cost on the basis of azure recommendation APIs for the machine deployed on azure. On the basis of usuage and consumption of the resources of the Azure by the machnie deployed on azure cloud ,Azure APIs will send the recommendation and on that basis tool will suggest the new cost saving and previous cost investment and the differnce of the both that depend on company standard and SOPs. The goal of Cost Management Tool project ux design is to apply enhanced user experience and create a better overall Cost Management Tool tool for the users user experience to track the live status of the machines deploy on cloud as well perform decision analytics.
-
-Right now organization using IBM tool turbonomics for the same that costs organization around $10 Million, so we have to designe and developed tool in-house that will reduce the cost of the IBM provided tool per year and customization can be possible through this that earlier not provided in previous tool
-<span>Requirements:<span>
-
-<p>
-In order to design a Cost Management Tool ux design, we need to understand the requirements of the user/stakholder/higher management like what are the feature they planned or want as a tool to enhance their productivity in minimal efforts and with more security. This includes understanding what needs to be improved/implemented in tool so that later on customization can be possible and tool should be user friendly with accessiblity feature and usabality.
-</p>
-We have requirements like
-<ol>
-<li>Need to create search page on which searching can be done through various filter like virtual machine,resource group,cost center,support group and all and result will be visible in card as well as list format for the usablity purpose</li>
-<li>Need to create drawer that can be utilised in dashboard,search page to view the information and under the request ID and parameters of the deployed machine with all the analytics like cost saving new instances, old instances,support group etc</li>
-<li>Need to create policy pages for creating or defining the policies for the implemntation of down sizing or upsizing in order to save costs</li>
-<li>Need to create user management page for the application that can be accessible to the admins for managing the access for the users.</li>
-<li>Need to create Hierarchy view or timeline view for showing history of the request id actions like if exception raised in order to prevent auto down sizing of the resources user should have option to raise request by clicking minimal click to submit request so admin can reject or accept the same request SO timeline view so brief information of the request ID history when created and what action have been taken till now and wht will be the result of the actions.</li>
-<li>Need to create dashboard to approve or reject or view request for the admins to approve or reject and view detailed information of the request and for user to view and track their request staus.</li>
-</ol>
-<p><b>User research:</b></p>  
-<p>
-User research is essential for understanding the needs of users. This involves interviewing various users and observing how they interact with the system ,under which age group they falls ,how much technical sounds they were, what are the problems they usually face, how they tackle the failover cases of the deployed machine or misconfigure of the IPs and other factors. I want to know what are the things they need to track on regular basis and which information is crucial.
-
-The methods we used were:
-<ol>
-<li>Competitive Analysis</li>
-<li>Surveys</li>
-<li>User Interviews</li>
-<li>Persona Development</li></ol>
-</p>
-<p>
-For interview i interview users of the services and gather data like How many APIs we have, what are the machine that i am taking care and give as a service to the users, how they want data to be maintained. how they want data to be represented, filtered, what are the data that need to do analytics to show the same in more creative and unique way for better user experience.
-<p><b>
-Ideation & testing</b>
-</p>
-<p>
-I sketched ideas of how the Dashboard,live tracking ,gate information feature for Aviation project should look. Then created low fidelity wireframes and finally, high fidelity wireframes that incorporated the look and feel of Aviation project.I went through three rounds of testing; at each step of the design process i created a clickable prototype to test our ideas, obtained feedback from potential customers and iterated our design.
-</p>
-  <p>
- <b> User Interface Design</b>
-  </p>
-  <p>
- Once i have a good understanding of the user needs, it's time to design the user interface. I need to create a user interface that is easy to use, provides a good user experience, have accessiblity,usablity,consitency in information flow, color theory should be aligned to company standard. I also need to make user interface for admins/staff who gonna track the data or use the data and maintained the live data as well as analysis the same.
-
-As a individual contributor form Hyderabad designing team for the Tab/web development i worked on deisgning the wireframe from low fidelity to high fidelity from doing requirement gathering to user research and analysis the data with a team of 3 designer and i lead the designer team for the prototyping and helped the team to develop the code in react. Following proces in agile and in iterative way i used to do designing in iteration wise and take the feedback from the stakeholder(airport staff) and the product owner of the application</p>
-  <b>Tools used</b>
-  <p>
-  Adobe XD, Illustrator Application
-  </p>
-            </div>
-          </div>
-
+         
         </div>
+        <div class="section">
+    <h2>Problem Statement</h2>
+    <p>
+      High dependency on third-party tools with poor flexibility and high costs (e.g., Turbonomics costing $10M/year) made cost tracking difficult. Our aim was to design a tool for internal deployment with API-driven intelligence and customizability.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>Key Requirements</h2>
+    <ul>
+      <li>Search filters by VM, cost center, support group, etc.</li>
+      <li>Result views in both card and list format.</li>
+      <li>Drawer component with real-time cost analytics by request ID.</li>
+      <li>Policy creation pages for scaling operations.</li>
+      <li>User management access for admins.</li>
+      <li>Hierarchy/timeline view of request actions and exception handling.</li>
+      <li>Admin dashboard for request approvals and analytics.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Research</h2>
+    <p>
+      User interviews revealed the need for a flexible, customizable interface that provided real-time feedback on savings opportunities. Key user needs included filtering large datasets, visualizing machine lifecycle, and tracking history of exception requests.
+    </p>
+    <p><strong>Methods used:</strong></p>
+    <ul>
+      <li>Competitive Analysis</li>
+      <li>Persona Development</li>
+      <li>User Interviews</li>
+      <li>Surveys</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>User Persona: Priya Deshmukh</h2>
+    <p><strong>Age:</strong> 38 &nbsp; <strong>Role:</strong> Cloud Infrastructure Admin</p>
+    <h3>Goals</h3>
+    <ul>
+      <li>Track cost-saving opportunities per machine.</li>
+      <li>Control exceptions to prevent auto-scaling mistakes.</li>
+      <li>Get real-time insights from Azure APIs.</li>
+    </ul>
+    <h3>Pain Points</h3>
+    <ul>
+      <li>Data overload in existing dashboards.</li>
+      <li>Limited filters and customization in current tools.</li>
+      <li>Difficulty tracking request history and audit trail.</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Information Architecture</h2>
+    <ul>
+      <li><strong>Search & Explore</strong>: Filters, List/Card view, Cost Center Lookup</li>
+      <li><strong>Drawer</strong>: Request ID details, New vs Old cost instances</li>
+      <li><strong>Policy Engine</strong>: Create/edit scaling and savings policies</li>
+      <li><strong>User Access</strong>: Admin user management panel</li>
+      <li><strong>Timeline View</strong>: Actions, exceptions, request flow</li>
+      <li><strong>Dashboard</strong>: Admin control panel for request oversight</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Design & Testing</h2>
+    <p>
+      As lead designer, I guided the team through low- to high-fidelity prototypes using Adobe XD. Three test iterations were run to validate usability. Visual hierarchy and filtering were optimized for time-constrained admins.
+    </p>
+  </div>
+
+  <div class="section">
+    <h2>UI Highlights</h2>
+    <ul>
+      <li>Dark theme with blue/purple accents for cloud tech feel</li>
+      <li>Quick toggles for card/list views</li>
+      <li>Component-based UI for customization</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>Conclusion</h2>
+    <p>
+      The COST Tool is a scalable, low-cost alternative to Turbonomics. It empowers internal teams to manage Azure resources with more control, better visibility, and flexibility. It’s already projected to save the org millions annually.
+    </p>
+  </div>
+
 
       </div>
     </section><!-- End Portfolio Details Section -->
